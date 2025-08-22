@@ -1,6 +1,5 @@
 # In the original repo(s)
-git log --author="Your Name" --date=short --pretty=%ad \
-| sort | uniq -c | awk '{print $1" "$2}' > ~/counts.txt
+git log --author="Your Name" --date=short --pretty=%ad | sort | uniq -c | awk '{print $1" "$2}' > ~/counts.txt
 
 # In the current repo
 ## 2) drop your counts file here (copy from Step A)
