@@ -3,8 +3,6 @@ git log --author="Your Name" --date=short --pretty=%ad \
 | sort | uniq -c | awk '{print $1" "$2}' > ~/counts.txt
 
 # In the current repo
-cp ~/counts.txt .
-
 ## 2) drop your counts file here (copy from Step A)
 cp ~/counts.txt .
 
