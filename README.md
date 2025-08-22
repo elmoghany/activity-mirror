@@ -9,6 +9,7 @@ cp ~/counts.txt .
 cp ~/counts.txt .
 
 ## 3) replay: make empty commits dated in the past
+```
 while read COUNT DATE; do
   for i in $(seq 1 "$COUNT"); do
     export GIT_AUTHOR_DATE="${DATE}T12:00:00Z"
@@ -16,3 +17,4 @@ while read COUNT DATE; do
     git commit --allow-empty -m "work ${DATE} #$i" >/dev/null
   done
 done < counts.txt
+```
